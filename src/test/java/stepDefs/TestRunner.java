@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 		
-		plugin= {"html:target/html-cucumber"},
+		plugin= {"html:target/html-cucumber", "json:target/cucumber.json"},
 
 		features= "src/test/java/features",
 		tags= {"@Sanity"},  // to run the single tags
